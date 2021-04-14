@@ -5,31 +5,25 @@
  <title>Math Game</title>
  <!-- 插入Script -->
  <script src="script.js"></script>
-
 </head>
 
-<h1 >Enjoy your play time!</h1>
-
-<table align="center" width="300" height="180" border="0" cellpadding="0" cellspacing="3">
-  <tr align="center">
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-0" onclick="ct(this)"><img src="gun.png" class="gun">1</td>
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-1" onclick="ct(this)"><img src="gun.png" class="gun">2</td>
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-2" onclick="ct(this)"><img src="gun.png" class="gun">3</td>
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-0" onclick="ct(this)"><img src="gun.png" class="gun">4</td>
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-1" onclick="ct(this)"><img src="gun.png" class="gun">5</td>
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-2" onclick="ct(this)"><img src="gun.png" class="gun">6</td>
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-1" onclick="ct(this)"><img src="gun.png" class="gun">7</td>
-    <td bgcolor="#4599cc" width="5%" height="5%" id="0-2" onclick="ct(this)"><img src="gun.png" class="gun">8</td>
-  </tr>
-  <tr align="center">
-    <td bgcolor="#4599cc" width="5%" height="50%" id="1-0" onclick="ct(this)"></td>
-    <td bgcolor="#4599cc" width="5%" height="50%" id="1-1" onclick="ct(this)"></td>
-    <td bgcolor="#4599cc" width="5%" height="50%" id="1-2" onclick="ct(this)"></td>
-  </tr>
-</table>
-
-<button onclick="foreach()">Many fruits!</button>
 <body>
+  <h1>Enjoy your play time!</h1>
+  <p >Here are some words puzzles for you! Just have a try!</p>
+<div class="out" style="align:center;">
+  <div class="in"><b>QUESTION</b></div><br />
+  <div id="question" class="in">What 5-letter word has 6 left when you take 2 letters away?</div>
+</div>
+<br>
+
+<from name="judge">
+<input id="ans" name="ans" type="text">
+<button id="guess" type="button" onclick="my_func()">Guess</button>
+<button id="tip" type="button" onclick="tip()">Tips</button>
+
+</from>
+<p id = "demo"></p>
 </body>
+
 <link type="text/css" rel="styleSheet"  href="css.css" >
 </html>
