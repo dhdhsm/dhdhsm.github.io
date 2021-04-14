@@ -9,20 +9,22 @@
 
 <body>
   <h1>Enjoy your play time!</h1>
-  <p >Here are some words puzzles for you! Just have a try!</p>
+  <p >Here are some word puzzles for you! Just have a try!</p>
 <div class="out" style="align:center;">
   <div class="in"><b>QUESTION</b></div><br />
-  <div id="question" class="in">What 5-letter word has 6 left when you take 2 letters away?</div>
+  <div id="question" class="in">What 5-letter word has 6 left when you take 2 letters away?</div><br><br>
+  <div class="in" style="font-size:15px; color:grey; font-family:"><i>You can click the "hint" button to get more information.</i></div>
 </div>
 <br>
 
 <from name="judge">
 <input id="ans" name="ans" type="text">
 <button id="guess" type="button" onclick="my_func()">Guess</button>
-<button id="tip" type="button" onclick="tip()">Tips</button>
-
+<button id="tip" type="button" onclick="tip()">Hint</button>
 </from>
-<p id = "demo"></p>
+<p id = "demo" style="font-size:15px"></p>
+<br><br>
+<button id="re" type="button" onclick="re()">Have a new question!</button>
 </body>
 
 <link type="text/css" rel="styleSheet"  href="css.css" >
