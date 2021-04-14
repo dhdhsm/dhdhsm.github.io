@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html  lang="CN">
 
 <head>
+  <meta charset="utf-8">
  <title>Math Game</title>
  <!-- 插入Script -->
  <script src="script.js"></script>
@@ -18,7 +19,7 @@
 <br>
 
 <from name="judge">
-<input id="ans" name="ans" type="text">
+<input id="ans" name="ans" type="text" placeholder="YOUR ANSWER"  onkeyup="this.value=this.value.toUpperCase()">
 <button id="guess" type="button" onclick="my_func()">Guess</button>
 <button id="tip" type="button" onclick="tip()">Hint</button>
 </from>

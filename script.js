@@ -1,6 +1,6 @@
 
 var x;
-var y="sixth";
+var y="SIXTH";
 var z="Hint : 6 is A number";
 function my_func(){
         x=document.getElementById("ans").value;
