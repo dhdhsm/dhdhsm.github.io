@@ -13,11 +13,28 @@ var hints=["Hint: the letter is like a tree branch.","Hint:Bee","Hint:People dri
 
 function my_func(){
         x=document.getElementById("ans").value;
-        if(x==y) {alert("Successful!") ;
+        if(x==y) {swal("Successful!") ;
           }
-        else  {alert("Wrong!") ;
+        else  {swal("Wrong!") ;
+        swal("Wrong!", {
+          buttons: {
+            //cancel: "Run away!",
+            catch: {
+              text: "再试一次",
+              value: "catch",
+            },
+            defeat: "我要放弃",
+          },
+        })
+        .then((value) => {
+          switch (value) {
+            case "defeat":
+              swal("站起来!", "你能行！你可以！你必成功！");
+              break;
+
           }
-}
+        });
+}}
 
 function tip(){
       document.getElementById("demo").innerHTML = z;
