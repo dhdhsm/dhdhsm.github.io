@@ -13,10 +13,10 @@ var hints=["Hint: the letter is like a tree branch.","Hint:Bee","Hint:People dri
 
 function my_func(){
         x=document.getElementById("ans").value;
-        if(x==y) {alert("Sucessful!") ;
+        if(x==y) {alert("Successful!") ;
           }
         else  {alert("Wrong!") ;
-}
+          }
 }
 
 function tip(){
