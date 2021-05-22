@@ -79,6 +79,7 @@ background-size: cover;
   background: rgba(255,255,255,0.1);
   display: block;
   position: absolute;
+  text-align:center;
   top: 0%;
   left: 65%;
   outline: 9999px solid rgba(0,0,0,0.1);
