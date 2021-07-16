@@ -342,17 +342,41 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-custom label.radio-mobile::after {
-	background-image: url(../img/mobile.svg);
+.fs-fields .fs-radio-custom label.radio-1::after {
+	background-image: url(../img/1.1.JPG);
 }
 
-.fs-fields .fs-radio-custom label.radio-social::after {
-	background-image: url(../img/social.svg);
+.fs-fields .fs-radio-custom label.radio-2::after {
+	background-image: url(../img/1.2.JPG);
 }
 
-.fs-fields .fs-radio-custom label.radio-conversion::after {
-	background-image: url(../img/conversion.svg);
+.fs-fields .fs-radio-custom label.radio-3::after {
+	background-image: url(../img/1.3.JPG);
 }
+.fs-fields .fs-radio-custom label.radio-4::after {
+	background-image: url(../img/2.1.JPG);
+}
+
+.fs-fields .fs-radio-custom label.radio-5::after {
+	background-image: url(../img/2.2.JPG);
+}
+
+.fs-fields .fs-radio-custom label.radio-6::after {
+	background-image: url(../img/2.3.JPG);
+}
+.fs-fields .fs-radio-custom label.radio-7::after {
+	background-image: url(../img/4.1.png);
+}
+
+.fs-fields .fs-radio-custom label.radio-8::after {
+	background-image: url(../img/4.2.png);
+}
+
+.fs-fields .fs-radio-custom label.radio-9::after {
+	background-image: url(../img/4.3.png);
+}
+
+
 
 .fs-fields .fs-radio-custom label:hover::after,
 .fs-fields input[type="radio"]:focus + label::after,
