@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>理解色彩原理</title>
+<!--Usefull Meta-->
+<link rel="shortcut icon" href="E:\2021creative-interaction-design\personal-location\dhdhsm.github.io\designer\images\favicon.ico">
+<meta name="description" content="A slick, customizable CV, Resume or Portfolio template, perfect for photographers, freelancers or designers.">
+<meta name="keywords" content="angus, resume, cv, vCard, portfolio, html template, template, responsive">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_16x16.png">
+<!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<!--AOS Animation Stylesheet-->
+<link rel="stylesheet" href="assets/css/aos.css">
+<!--Font Awesome-->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<!--Magnific Popup-->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!--OWL Carousel-->
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<!--OWL Carousel Theme-->
+<link rel="stylesheet" href="assets/css/owl_theme.css">
+<!--Keyden Styelsheet with Bootstrap 5-->
+<link rel="stylesheet" href="assets/css/kayden_1.css">
+
+<!--冷暖对比-->
+<link rel="stylesheet" href="BeerSlider.css">
+<!-- Bottom of body -->
+<script src="BeerSlider.js"></script>
+<style media="screen">
+  body{text-align:center}
+  video.class{
+
+     margin:0 auto;
+  }
+  h1{
+         margin:0 auto;
+         Color:White;
+         font-size:3em;
+  }
+  body{
+    background-color: #000;
+background-position:no-repeat center center fixed;
+background-repeat:no-repeat;
+background-size:100% 100%;
+width: 100%;
+height: 100%;
+
+  }
+
+</style>
+
+</head>
+<body data-offset="102">
+  <!--video视频标签，给上宽高-->
+
+ <video class = "donghua" id="video" onmouseover="videoPlayback()" onmouseout="videoStopped()" width="1500px" >
+      <!--视频类型为视频和视频路径-->
+      <source type="audio/mp4" src="动画带结尾.mp4"></source>
+  </video>
+  <div class="zhanwei">
+<br><br><br><br><br><br><br><br><br><br><br>
+<h1>移动鼠标，寻找色板上的“七个大陆”</h1>
+<br><br><br><br>
+  <div id="tab_1">
+      <iframe src="./7/7.html"
+              height="500"
+              width="1400"
+              frameborder="0"
+              scrolling="0"
+      ></iframe>
+      <br><br><br>
+  </div>
+
+
+<script>
+    //鼠标移进去
+   function videoPlayback(){
+     //获取视频标签
+       var video = document.getElementById('video');
+       //给视频标签添加缓存播放---video标签属性。
+      video.setAttribute("autoplay","autoplay")
+     //给视频标签添加循环播放---video标签属性。
+        video.setAttribute("loop","loop")
+       //播放视频
+      video.play();
+  }
+
+  //鼠标离开
+  function videoStopped(){
+      //获取视频标签
+  var oDiv = document.getElementById('video');
+     //停止播放
+     video.pause();
+  }
+</script>
+<!--PRELOADER START-->
+<div id="preloader">
+  <div class="text-center w-100">
+    <div class="loader"></div>
+  </div>
+</div>
+<!--PRELOADER END-->
+<!--Header START-->
+
+
+<!--Header END-->
+
+
+<!--Page1 简单介绍 Home Section START-->
+<section id="home" class="home vh-100"><!--Home Background START-->
+  <div class="home-background position-absolute top-0 start-0 w-100 h-100"><img src="assets/images/home.jpg" data-aos="fade-up" data-aos-duration="1000" alt="home" class="w-100 h-100 fit-cover fit-left-top"></div>
+  <!--Home Background END--><!--Home Container START-->
+  <div class="container h-100 position-relative">
+    <div class="home-details text-center text-sm-end w-100 h-100 d-flex align-items-center">
+      <div class="home-details-inner w-100">
+        <p class="welcome_text fs-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><span class="typed_text" data-options="对比色平衡, 互补色平衡,冷暖平衡,深浅平衡"></span></p>
+        <h1 class="fs-1 fw-bold  kayden-underline-center kayden-underline-sm-right kayden-underline-big d-inline-block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">平衡</h1>
+      </div>
+    </div>
+  </div>
+  <!--Home Container END-->
+
+  <!--引导下滑小图标Scroll Down START-->
+  <div class="scroll-down"> <a href="#about" class="kayden_scrollspy scroll-down-link text-center">
+    <div class="scroll-title">Scroll Down</div>
+    <div class="scroll-mouse">
+      <div class="whell"></div>
+    </div>
+    </a> </div>
+  <!--Scroll Down END-->
+
+</section>
+<!--Home Section END-->
+
+
+
+<!--Page2 内嵌网页Services Section START-->
+<section id="services">
+  <div class="container">
+    <!--Section Heading START-->
+    <div class="heading text-center mb-5">
+      <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">块</h2>
+    </div>
+    <!--Section Heading END-->
+    <!--Section Body START-->
+    <div><iframe src ="http://colorschemedesigner.com/csd-3.5/" width="100%" height="800px" scrolling=no>
+    </iframe></div>
+
+    <!--Section Body END-->
+  </div>
+</section>
+<!--Services Section END-->
+
+<!--Page 3:冷暖色 About Section START-->
+<section id="about" class="min-vh-100">
+  <div class="container h-100">
+    <div class="about_inside w-100 h-100 d-flex justify-content-center align-items-center">
+      <div class="row w-100">
+        <!--About Section Picture START-->
+        <div class="offset-md-1 col-md-4">
+          <div class="m">
+          <div id="slider" class="beer-slider" data-beer-label="warm">
+            <img src="assets\pic\aa.png" alt="">
+            <div class="beer-reveal" data-beer-label="cool">
+            <img src="assets\pic\bb.png" alt="">
+            </div>
+          </div>
+        </div>
+          <!--div class="about-image w-100">
+             <img src="assets/" class="kayden-shadow rounded-3 w-100" alt="kayden Picture" data-aos="zoom-in" data-aos-duration="800"> </div-->
+        </div>
+        <!--About Section Picture END-->
+        <!--About Section Details START-->
+        <div class="offset-md-1 col-md-6 mt-5 mt-md-0">
+          <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="about-details">
+              <h2 class="fs-3 fw-bold mb-5">冷暖平衡</h2>
+              <p class="text-secondary mb-5">
+                红黄橙色系给人的感觉比较温暖，所以我们将红黄橙色系归为暖色系，而绿青蓝给人的感觉是比较寒冷，所以我们将滤清蓝色系归为冷色系。
+在色彩搭配的时候如果大面积使用暖色，就应该适当的搭配一些冷色，降低画面的燥热感，达到冷暖平衡。</p>
+             </div>
+          </div>
+        </div>
+        <!--About Section Details END-->
+      </div>
+    </div>
+  </div>
+</section>
+<!--About Section END-->
+
+<!--Page4:深浅平衡  Section START  -->
+<section id="education">
+  <div class="container">
+    <!--Section Heading START-->
+    <div class="heading text-center mb-5">
+      <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">深浅平衡</h2>
+        <p class="text-secondary mb-5">画面中的颜色应该有深有浅，互相搭配，比如我们的主色调是浅色系，就可以用深色系的色调来搭配，这样可以满足深浅平衡。</p>
+    </div>
+    <!--Section Heading END-->
+
+  </div>
+</section>
+<!--Education Section END-->
+
+<!--Page5：631法则 Facts Section START-->
+<section id="facts">
+  <!--Section Body START-->
+  <div class="section-body">
+    <div class="container" >
+          <h2 class="fs-3 mb-5 fw-bold">色彩面积平衡</h2>
+          <div class="skills_container">
+            <!--Progress Bar START-->
+            <div class="mb-4">
+              <label class="mb-3 fs-6">主色 60%</label>
+              <div class="progress">
+                <div class="progress-bar progress-bar-loadAnimation" data-percent="60" style="width: 0%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--Progress Bar END-->
+            <!--Progress Bar START-->
+            <div class="mb-4">
+              <label class="mb-3 fs-6">辅助色 30%</label>
+              <div class="progress">
+                <div class="progress-bar progress-bar-loadAnimation" data-percent="30" style="width: 0%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--Progress Bar END-->
+            <!--Progress Bar START-->
+            <div class="mb-4">
+              <label class="mb-3 fs-6">点缀色 10%</label>
+              <div class="progress">
+                <div class="progress-bar progress-bar-loadAnimation" data-percent="10" style="width: 0%;" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!--Progress Bar END-->
+          </div>
+    </div>
+  </div>
+  <!--Section Body END-->
+</section>
+<!--Facts Sectrion END-->
+
+<!--About Section START 有无色彩对比介绍-->
+<section id="about" class="min-vh-100">
+  <div class="container h-100">
+    <div class="about_inside w-100 h-100 d-flex justify-content-center align-items-center">
+      <div class="row w-100">
+        <!--About Section Picture START-->
+        <div class="offset-md-1 col-md-4">
+
+          <div class="about-image w-100">
+             <img src="assets/pic/wu.png" class="kayden-shadow rounded-3 w-100" alt="kayden Picture" data-aos="zoom-in" data-aos-duration="800"> </div>
+        </div>
+        <!--About Section Picture END-->
+        <!--About Section Details START-->
+        <div class="offset-md-1 col-md-6 mt-5 mt-md-0">
+          <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="about-details">
+              <h2 class="fs-3 fw-bold mb-5">彩色与黑白</h2>
+              <p class="text-secondary mb-5">
+                有彩色就是我们在色轮上能找到的五颜六色的各种颜色，而无彩色说白了就是黑白灰，无彩色的黑白灰给人的感觉往往比较无聊，而彩色给人的感觉是非常的活跃不够沉稳，二者搭配会平衡各自的缺点，发扬各自的优点。</p>
+             </div>
+          </div>
+        </div>
+        <!--About Section Details END-->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<video width="1400"  controls>
+     <source type="audio/mp4" src="500强logo.mp4"></source>
+
+您的浏览器不支持Video标签。
+</video>
+<!--About Section END-->
+
+
+<!--To TOP START-->
+<a href="#" class="toTop d-inline" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+<!--To TOP END--><!--JavaScript START-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--JQuery-->
+<script src="assets/js/jquery.min.js"></script>
+<!--AOS Animations-->
+<script src="assets/js/aos.js"></script>
+<!--Jquery Easing -->
+<script src="assets/js/jquery.easing.min.js"></script>
+<!--Jquery Appear -->
+<script src="assets/js/jquery.appear.min.js"></script>
+<!--Kayden preloader -->
+<script src="assets/js/preloader.js"></script>
+<!--Jquery Count To -->
+<script src="assets/js/jquery.countTo.js"></script>
+<!--Masonry -->
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<!--Jquery Magnific Popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--OWL Carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--Typed JS -->
+<script src="assets/js/typed.min.js"></script>
+<!--Kayden Alert -->
+<script src="assets/js/alert.js"></script>
+<!--Kayden Contact US -->
+<script src="assets/js/contact.js"></script>
+<!--Kayden Custom Script -->
+<script src="assets/js/kayden.js"></script>
+<!--JavaScript END-->
+
+<!--冷暖对比-->
+<script>
+    new BeerSlider(document.getElementById('slider'));
+	 new BeerSlider(document.getElementById('slider2'));
+  </script>
+
+</body>
+</html>
