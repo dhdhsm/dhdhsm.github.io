@@ -8,7 +8,7 @@ body {
   background-color:#002FA7;
   background-size: cover;
   overflow-x: hidden;
-  color:black;
+  /* color:black; */
 }
 
 .layout_padding {
