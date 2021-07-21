@@ -100,7 +100,7 @@ body {
 .header_section{
     background-color:rgba(255,255,255,.15) ;
     /* z-index: 9000; */
-    margin-bottom: 0;
+    margin-bottom: -70px;
 }
 
 
@@ -194,7 +194,7 @@ a:focus {
 
 .slider_section .box {
   width: 75%;
-  margin: 184px auto;
+  margin: 220px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
